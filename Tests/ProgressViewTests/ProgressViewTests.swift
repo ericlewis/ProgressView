@@ -2,14 +2,11 @@ import XCTest
 @testable import ProgressView
 
 final class ProgressViewTests: XCTestCase {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(ProgressView().text, "Hello, World!")
+    func test() {
+        XCTAssertEqual(ProgressView(value: .constant(0.1)).value, 0.1)
     }
 
     static var allTests = [
-        ("testExample", testExample),
+        ("test", test),
     ]
 }
