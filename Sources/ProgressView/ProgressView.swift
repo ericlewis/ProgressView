@@ -1,13 +1,13 @@
 import SwiftUI
 
-struct ProgressView: UIViewRepresentable {
-    @Binding var value: Float
+public struct ProgressView: UIViewRepresentable {
+    @Binding public var value: Float
     
-    func makeUIView(context: Context) -> UIProgressView {
+    public func makeUIView(context: Context) -> UIProgressView {
         UIProgressView()
     }
     
-    func updateUIView(_ uiView: UIProgressView, context: Context) {
+    public func updateUIView(_ uiView: UIProgressView, context: Context) {
         uiView.setProgress(value, animated: true)
     }
 }

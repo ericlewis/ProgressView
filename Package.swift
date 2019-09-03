@@ -7,6 +7,7 @@ let package = Package(
     name: "ProgressView",
     platforms: [
         .iOS(.v13),
+        .macOS(.v10_15),
         .tvOS(.v13)
     ],
     products: [
@@ -24,5 +25,8 @@ let package = Package(
         .testTarget(
             name: "ProgressViewTests",
             dependencies: ["ProgressView"]),
+    ],
+    swiftLanguageVersions: [
+        .version("5.1")
     ]
 )
