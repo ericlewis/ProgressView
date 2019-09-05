@@ -3,7 +3,7 @@ import XCTest
 
 final class ProgressViewTests: XCTestCase {
     func test() {
-        XCTAssertEqual(ProgressView(value: .constant(0.1)).value, 0.1)
+        XCTAssertEqual(ProgressView(.constant(0.1)).value, 0.1)
     }
 
     static var allTests = [
